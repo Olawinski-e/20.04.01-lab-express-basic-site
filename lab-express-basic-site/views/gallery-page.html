@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Gallery</title>
+  </head>
+
+  <body>
+    <div class="text">
+      <h1 id="link-2">Gallery</h1>
+      <h1 id="none"><a href="/">Go Home</a></h1>
+
+      <div class="link">
+        <a href="/works">Works</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
+
+    <div class="images">
+      <img src="../images/1.jpg" alt="" />
+      <img src="../images/2.jpg" alt="" />
+      <img src="../images/3.jpg" alt="" />
+      <img src="../images/4.jpg" alt="" />
+      <img src="../images/5.jpg" alt="" />
+      <img src="../images/6.jpg" alt="" />
+      <img src="../images/7.jpg" alt="" />
+      <img src="../images/8.jpg" alt="" />
+      <img src="../images/9.jpg" alt="" />
+    </div>
+
+    <script>
+      document
+        .getElementById("link-2")
+        .addEventListener("mouseenter", mouseEnter);
+      document
+        .getElementById("link-2")
+        .addEventListener("mouseleave", mouseLeave);
+
+      function mouseEnter() {
+        document.getElementById("link-2").style.display = "none";
+        document.getElementById("none").style.display = "block";
+      }
+
+      function mouseLeave() {
+        document.getElementById("link-2").style.display = "flex";
+        document.getElementById("none").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
